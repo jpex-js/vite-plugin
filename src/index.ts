@@ -10,6 +10,7 @@ interface Opts {
 
 export default (opts: Opts = {}) => {
   const identifier: string[] = [].concat(opts.identifier || 'jpex');
+  identifier.push('react-jpex');
 
   const plugin: Plugin = {
     name: 'jpex',
